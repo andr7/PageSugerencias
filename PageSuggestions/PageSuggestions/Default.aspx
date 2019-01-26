@@ -3,12 +3,39 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>Suggestions</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <h1>AGA Sugerencias</h1>
+        <h3>Sede o Lugar</h3>
+        
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="CAR" value="option1"  checked="true" >
+            <label class="form-check-label" for="inlineRadio1">CARRIZALES</label>
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="NAT" value="option2" >
+            <label class="form-check-label" for="inlineRadio2">NATALIA</label>
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="CAL" value="option2">
+            <label class="form-check-label" for="inlineRadio2">CALIFORNIA</label>
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="VAL" value="option2" >
+            <label class="form-check-label" for="inlineRadio2">VALERIE</label>
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="DV" value="option2" >
+            <label class="form-check-label" for="inlineRadio2">DON VICTOR</label>
+
+        </div>
+        
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Ingrese su Sugerencia o queja</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlFile1">Adjuntar Evidencia</label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+        
+       
     </div>
 
-    <div class="row">
+
+
+    <%--<div class="row">
         <div class="col-md-4">
             <h2>Getting started</h2>
             <p>
@@ -37,6 +64,6 @@
                 <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
             </p>
         </div>
-    </div>
+    </div>--%>
 
 </asp:Content>

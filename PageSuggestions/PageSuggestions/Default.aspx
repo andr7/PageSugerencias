@@ -1,35 +1,45 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PageSuggestions._Default" %>
 
+<%@ Register Assembly="DevExpress.Web.Bootstrap.v17.2, Version=17.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.Bootstrap" TagPrefix="dx" %>
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>AGA Sugerencias</h1>
-        <h3>Sede o Lugar</h3>
-        
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="CAR" value="option1"  checked="true" >
-            <label class="form-check-label" for="inlineRadio1">CARRIZALES</label>
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="NAT" value="option2" >
-            <label class="form-check-label" for="inlineRadio2">NATALIA</label>
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="CAL" value="option2">
-            <label class="form-check-label" for="inlineRadio2">CALIFORNIA</label>
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="VAL" value="option2" >
-            <label class="form-check-label" for="inlineRadio2">VALERIE</label>
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="DV" value="option2" >
-            <label class="form-check-label" for="inlineRadio2">DON VICTOR</label>
-
+        <h1 style="text-align: center; text-decoration: underline;">AGA Sugerencias</h1>        
+        <h3>Sede o Lugar</h3>                 
+        <div>
+            <dx:BootstrapRadioButtonList ID="BootstrapRadioButtonList1" runat="server" RepeatDirection="Horizontal">
+                <Items>
+                    <dx:BootstrapListEditItem Text="CARRIZALES" Value="CARRIZALES" Selected="True">
+                    </dx:BootstrapListEditItem>
+                    <dx:BootstrapListEditItem Text="NATALIA" Value="NATALIA">
+                    </dx:BootstrapListEditItem>
+                    <dx:BootstrapListEditItem Text="CALIFORNIA" Value="CALIFORNIA">
+                    </dx:BootstrapListEditItem>
+                    <dx:BootstrapListEditItem Text="VALERIE" Value="VALERIE">
+                    </dx:BootstrapListEditItem>
+                    <dx:BootstrapListEditItem Text="DON VICTOR" Value="DON VICTOR">
+                    </dx:BootstrapListEditItem>
+                </Items>
+            </dx:BootstrapRadioButtonList>
         </div>
         
-        <div class="form-group">
+        <%--<div class="form-group">
             <label for="exampleFormControlTextarea1">Ingrese su Sugerencia o queja</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        </div> --%>       
+        <div>
+            <dx:BootstrapTextBox ID="BootstrapTextBox1" runat="server" Width="681px">
+            </dx:BootstrapTextBox>
         </div>
-
-        <div class="form-group">
+        <div>
+        <%--<div class="form-group">
             <label for="exampleFormControlFile1">Adjuntar Evidencia</label>
             <input type="file" class="form-control-file" id="exampleFormControlFile1">
-        </div>
+        </div> --%>       
         
+            <asp:Button ID="enviar" runat="server" Text="Enviar" CssClass="btn btn-success" BorderStyle="Solid" OnClick="enviar_Click" Width="150px" />
+        </div>
        
     </div>
 

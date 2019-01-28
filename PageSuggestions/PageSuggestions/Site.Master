@@ -78,7 +78,7 @@
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
-            <footer>
+            <footer style="text-align: right">
                 <p>&copy; <%: DateTime.Now.Year %> - Agricola Andrea.</p>
             </footer>
         </div>

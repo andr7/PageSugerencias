@@ -10,7 +10,16 @@
 namespace PageSuggestions {
     
     
-    public partial class _Default {
+    public partial class Sugerencias {
+        
+        /// <summary>
+        /// Control form1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// Control BootstrapRadioButtonList1.
@@ -22,21 +31,21 @@ namespace PageSuggestions {
         protected global::DevExpress.Web.Bootstrap.BootstrapRadioButtonList BootstrapRadioButtonList1;
         
         /// <summary>
-        /// Control BootstrapTextBox1.
+        /// Control TextBox1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox BootstrapTextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
         
         /// <summary>
-        /// Control enviar.
+        /// Control BootstrapButton1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button enviar;
+        protected global::DevExpress.Web.Bootstrap.BootstrapButton BootstrapButton1;
     }
 }

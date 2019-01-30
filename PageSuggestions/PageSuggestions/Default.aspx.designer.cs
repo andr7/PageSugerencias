@@ -31,6 +31,15 @@ namespace PageSuggestions {
         protected global::DevExpress.Web.Bootstrap.BootstrapRadioButtonList BootstrapRadioButtonList1;
         
         /// <summary>
+        /// Control BootstrapRadioButtonList2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.Bootstrap.BootstrapRadioButtonList BootstrapRadioButtonList2;
+        
+        /// <summary>
         /// Control TextBox1.
         /// </summary>
         /// <remarks>
